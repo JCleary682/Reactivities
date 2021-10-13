@@ -1,4 +1,3 @@
-import { loadavg } from "os";
 import React from "react";
 import { Dimmer, Loader } from "semantic-ui-react";
 

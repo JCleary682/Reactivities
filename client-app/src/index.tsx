@@ -4,9 +4,14 @@ import 'semantic-ui-css/semantic.min.css';
 import './app/layout/styles.css';
 import App from './app/layout/App';
 import reportWebVitals from './reportWebVitals';
+import { store, StoreContext } from './app/stores/store';
 
 ReactDOM.render(
-    <App />,
+  //MOBX - Make StoreContext available to entire application & Set storecontext
+  //value to store
+  <StoreContext.Provider value={store}>
+    <App />
+  </StoreContext.Provider>,
   document.getElementById('root')
 );
 
